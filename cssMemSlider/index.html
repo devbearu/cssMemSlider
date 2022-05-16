@@ -4,7 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RSS: cssMemSlider</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>RSS: CSS MEME SLIDER</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="slider">
+        <input
+          class="slider__input"
+          type="radio"
+          name="slide"
+          id="meme-1"
+          checked
+        />
+        <input class="slider__input" type="radio" name="slide" id="meme-2" />
+        <input class="slider__input" type="radio" name="slide" id="meme-3" />
+        <input class="slider__input" type="radio" name="slide" id="meme-4" />
+        <input class="slider__input" type="radio" name="slide" id="meme-5" />
+        <input class="slider__input" type="radio" name="slide" id="meme-6" />
+        <input class="slider__input" type="radio" name="slide" id="meme-7" />
+        <input class="slider__input" type="radio" name="slide" id="meme-8" />
+        <div class="slider__slide">
+          <div class="image-carousel">
+            <div class="image-carousel__item" id="item-1">
+              <img class="img" alt="first meme" src="./assets/img/meme-1.jpg" />
+            </div>
+            <div class="image-carousel__item" id="item-2">
+              <img
+                class="img"
+                alt="second meme"
+                src="./assets/img/meme-2.jpg"
+              />
+            </div>
+            <div class="image-carousel__item" id="item-3">
+              <img class="img" alt="third meme" src="./assets/img/meme-3.jpg" />
+            </div>
+            <div class="image-carousel__item" id="item-4">
+              <img
+                class="img"
+                alt="fourth meme"
+                src="./assets/img/meme-4.jpg"
+              />
+            </div>
+            <div class="image-carousel__item" id="item-5">
+              <img class="img" alt="fivth meme" src="./assets/img/meme-5.jpg" />
+            </div>
+            <div class="image-carousel__item" id="item-6">
+              <img class="img" alt="sixth meme" src="./assets/img/meme-6.jpg" />
+            </div>
+            <div class="image-carousel__item" id="item-7">
+              <img
+                class="img"
+                alt="seventh meme"
+                src="./assets/img/meme-7.jpg"
+              />
+            </div>
+            <div class="image-carousel__item" id="item-8">
+              <img
+                class="img"
+                alt="eighth meme"
+                src="./assets/img/meme-8.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="slider__navigation">
+          <div class="slider__text">
+            <div class="text-carousel">
+              <p class="text-carousel__item">First meme</p>
+              <p class="text-carousel__item">Second meme</p>
+              <p class="text-carousel__item">Third meme</p>
+              <p class="text-carousel__item">Fourth meme</p>
+              <p class="text-carousel__item">Fifth meme</p>
+              <p class="text-carousel__item">Sixth meme</p>
+              <p class="text-carousel__item">Seventh meme</p>
+              <p class="text-carousel__item">Eighth meme</p>
+            </div>
+          </div>
+          <div class="slider__btns">
+            <label class="slider__btn" for="meme-1">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-2">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-3">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-4">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-5">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-6">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-7">
+              <span class="slider__circle"></span>
+            </label>
+            <label class="slider__btn" for="meme-8">
+              <span class="slider__circle"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
