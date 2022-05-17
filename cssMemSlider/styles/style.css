@@ -200,10 +200,10 @@ body {
 #meme-2:checked ~ .slider__navigation .slider__btn:nth-child(2) > *,
 #meme-3:checked ~ .slider__navigation .slider__btn:nth-child(3) > *,
 #meme-4:checked ~ .slider__navigation .slider__btn:nth-child(4) > *,
-#meme-4:checked ~ .slider__navigation .slider__btn:nth-child(5) > *,
-#meme-4:checked ~ .slider__navigation .slider__btn:nth-child(6) > *,
-#meme-4:checked ~ .slider__navigation .slider__btn:nth-child(7) > *,
-#meme-4:checked ~ .slider__navigation .slider__btn:nth-child(8) > * {
+#meme-5:checked ~ .slider__navigation .slider__btn:nth-child(5) > *,
+#meme-6:checked ~ .slider__navigation .slider__btn:nth-child(6) > *,
+#meme-7:checked ~ .slider__navigation .slider__btn:nth-child(7) > *,
+#meme-8:checked ~ .slider__navigation .slider__btn:nth-child(8) > * {
 	background-color: transparent;
 }
 
