@@ -1,0 +1,233 @@
+:root {
+	font-size: 75%;
+	font-family: 'Courier New', Courier, monospace;
+	--clr-main: #8d8daa;
+	--clr-secondary: #dfdfde;
+	--clr-contrast: #f56d91;
+}
+
+html {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: inherit;
+	height: 100vh;
+	background: var(--clr-secondary);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: inherit;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.img {
+	width: 65rem;
+	height: auto;
+	max-height: 40rem;
+	object-fit: fill;
+}
+
+.image-carousel {
+	display: flex;
+	align-items: center;
+	transition: all 0.8s ease-in-out;
+}
+
+.image-carousel__item {
+	border-radius: 1.5%;
+	overflow: hidden;
+}
+
+#meme-1:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(0);
+}
+
+#meme-2:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-12.5%);
+}
+
+#meme-3:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-25%);
+}
+
+#meme-4:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-37.5%);
+}
+
+#meme-5:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-50%);
+}
+
+#meme-6:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-62.5%);
+}
+
+#meme-7:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-75%);
+}
+
+#meme-8:checked ~ .slider__slide > .image-carousel {
+	transform: translateX(-87.5%);
+}
+
+.text-carousel {
+	height: 100%;
+	max-height: 3rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.text-carousel__item {
+	vertical-align: middle;
+	height: 3rem;
+	font-size: 1.8rem;
+	color: var(--clr-main);
+}
+
+#meme-1:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(0);
+}
+
+#meme-2:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-100%);
+}
+
+#meme-3:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-200%);
+}
+
+#meme-4:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-300%);
+}
+
+#meme-5:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-400%);
+}
+
+#meme-6:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-500%);
+}
+
+#meme-7:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-600%);
+}
+
+#meme-8:checked ~ .slider__navigation .text-carousel {
+	transform: translateY(-700%);
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 1.5rem;
+	width: 100%;
+	max-width: 65rem;
+}
+
+.slider__input {
+	display: none;
+}
+
+.slider__slide {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider__navigation {
+	display: flex;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.slider__text {
+	flex-grow: 8;
+	overflow: hidden;
+}
+
+.slider__btns {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	column-gap: 0.5rem;
+}
+
+.slider__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.slider__circle {
+	width: 1.5rem;
+	height: 1.5rem;
+	background: var(--clr-main);
+	border: solid var(--clr-main) 0.2rem;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+}
+
+.slider__btn:hover > .slider__circle {
+	background-color: var(--clr-contrast);
+	border-color: var(--clr-contrast);
+}
+
+.slider__btn:active > .slider__circle {
+	transform: scale(2.5);
+}
+
+#meme-1:checked ~ .slider__navigation .slider__btn:first-child > *,
+#meme-2:checked ~ .slider__navigation .slider__btn:nth-child(2) > *,
+#meme-3:checked ~ .slider__navigation .slider__btn:nth-child(3) > *,
+#meme-4:checked ~ .slider__navigation .slider__btn:nth-child(4) > *,
+#meme-5:checked ~ .slider__navigation .slider__btn:nth-child(5) > *,
+#meme-6:checked ~ .slider__navigation .slider__btn:nth-child(6) > *,
+#meme-7:checked ~ .slider__navigation .slider__btn:nth-child(7) > *,
+#meme-8:checked ~ .slider__navigation .slider__btn:nth-child(8) > * {
+	background-color: transparent;
+}
+
+@media (max-width: 768px) {
+	.slider__navigation {
+		flex-direction: column;
+		row-gap: 1.5rem;
+	}
+
+	.slider__text {
+		order: 2;
+	}
+
+	.slider__btns {
+		order: 1;
+	}
+}
+
+@media (max-width: 690px) {
+	.image-carousel__item {
+		width: calc(100vw - 4rem);
+	}
+
+	.img {
+		width: 100%;
+	}
+}
